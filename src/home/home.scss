@@ -53,7 +53,7 @@
     .home-main {
 
         width: 100%;
-        height: 80vh;
+        height: 75vh;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
         display: flex;
@@ -66,7 +66,7 @@
             width: 40%;
 
             .img-main {
-                width: 30em;
+                width: 40em;
                 // visibility: hidden;
                 // transform: scaleX(-1);
             }
@@ -109,9 +109,9 @@
             flex-direction: column;
             text-align: start;
             font-family: 'Crog-Black';
-            line-height: 10em;
 
             .header1 {
+                line-height: 1em;
                 margin: 0;
                 font-size: 14em;
                 color: #ed8599;
@@ -121,11 +121,22 @@
             }
 
             .header2 {
+                line-height: 1em;
                 font-size: 14em;
                 padding: 0;
                 margin: 0;
                 color: #74902d;
                 -webkit-text-stroke: 8px #222121;
+            }
+
+            .code {
+                display: flex;
+                width: 60%;
+                border: 1px solid #74902d;
+                border-radius: 10px;
+                padding: 10px;
+                justify-content: center;
+                align-items: center;
             }
         }
     }
@@ -136,73 +147,140 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        height: 40em;
-        margin-top: 2em;
-
-        .htb-h1 {
-            margin-bottom: 1em;
-            font-size: 60px;
-            font-family: 'Nohemi';
-        }
+        margin-top: 0em;
 
         .htb-wrap {
-            width: 90%;
+            width: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            .line {
+                width: -webkit-fill-available;
+                height: 2px;
+                background-color: #74902d;
+            }
+
+            .htb-header {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .htb-card {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .img-heart {
+                    width: 30em;
+                    height: 30em;
+                }
+
+                .htbc-body {
+                    width: 50%;
+
+                    .htcb-v {
+                        width: -webkit-fill-available;
+                    }
+                }
+            }
+
+            .htb-h1 {
+                margin-bottom: 1em;
+                font-size: 50px;
+                font-family: 'Crog-Black';
+            }
+
+        }
+
+    }
+
+    .tokenomics {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40em;
+        background: rgba(255, 255, 255, 0.1);
+
+        .token-wrap {
+            width: 70%;
+            border: 1px solid #05a3c9;
+            border-radius: 15px;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
             display: flex;
             justify-content: space-around;
             align-items: center;
 
-            .htb-card {
-                height: 30em;
-                width: 25em;
-                background-color: #222121;
-                border-radius: 15px;
+            .chart-img {
+                width: 30em;
+            }
+
+            .chart-text {
                 display: flex;
-                flex-direction: column;
+                justify-content: center;
                 align-items: center;
-                padding: 10px; // Adding padding here
-                box-sizing: border-box; // Ensures padding is included in width and height
+                flex-direction: column;
+                height: 100%;
 
-                .htb-img {
-                    height: 50%; // Adjust height to fill the card
-                    width: 100%;
-                    object-fit: cover;
-                    border-radius: 15px;
-                    box-sizing: border-box; // Ensures padding is included in width and height
+                .cht-h1 {
+                    color: #363636;
+                    -webkit-text-stroke: 2px #74902d;
+                    font-size: 4em;
                 }
 
-                .htb-middle {
-                    height: 30%;
-                    width: 100%;
-                    padding: 10px;
-                    background-color: #f3f3f3;
-                    border-top-left-radius: 15px;
-                    border-top-right-radius: 15px;
-                }
-
-                .htb-footer {
-                    height: 20%;
-                    width: 100%;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-
-                    .htbf-h4 {
-                        font-size: 40px;
-                        color: white;
-                        font-family: 'Nohemi';
-                    }
-
-                    .launch-web {
-                        height: 70px;
-                        width: 70px;
-                        border-radius: 50%;
-                        border: 2px solid white;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                    }
+                .cht-h2 {
+                    font-family: 'Nohemi';
+                    font-size: 40px;
                 }
             }
+        }
+    }
+
+    .contact {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .contact-wrap {
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            flex-direction: column;
+
+            .email {
+                color: #74902d;
+                // -webkit-text-stroke: 2px #ed8599;
+                font-size: 3em;
+            }
+        }
+
+        .line {
+            width: -webkit-fill-available;
+            height: 2px;
+            background-color: #74902d;
+        }
+
+        .cw-h1 {
+            margin-bottom: 1em;
+            font-size: 50px;
+            font-family: 'Crog-Black';
+        }
+
+        .htb-header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
     }
 
@@ -230,9 +308,11 @@
                 border-top-right-radius: 10px;
                 border-top-left-radius: 10px;
                 color: white;
-                .st-p{
+
+                .st-p {
                     width: 55%;
                 }
+
                 .st-h1 {
                     font-size: 50px;
                     font-family: 'Nohemi';
@@ -281,50 +361,6 @@
             .au-right {
                 width: 50%;
                 font-size: 20px;
-            }
-        }
-    }
-
-    .tokenomics {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 5em;
-
-        .t-wrapper {
-            .token-h1 {
-                font-size: 40px;
-                font-family: 'Nohemi';
-            }
-
-            .tokenomics-content {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-
-                .card-1 {
-                    border: 3px solid #74902d;
-                    width: 20em;
-                    border-radius: 15px;
-                    padding: 30px;
-                    display: flex;
-                    height: 20em;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                }
-
-                .card-2 {
-                    padding: 40px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    width: 20em;
-                    border: 3px solid #ed8599;
-                    border-radius: 15px;
-                }
             }
         }
     }
@@ -443,7 +479,7 @@
 
                 .img-main {
                     margin-top: 2.5em;
-                    width: 12em;
+                    width: 14em;
                     transform: scaleX(-1);
                 }
 
@@ -514,6 +550,12 @@
                     margin: 0;
                     color: #74902d;
                     -webkit-text-stroke: 4px #222121;
+                }
+
+                .code {
+                    display: flex;
+                    width: 60%;
+                    border: 1px solid #74902d;
                 }
             }
         }

@@ -11,6 +11,12 @@ import product1 from "../assets/product1.png"
 import product2 from "../assets/product2.png"
 import product3 from "../assets/product3.png"
 import { BsArrowUpRight } from "react-icons/bs";
+import video from "../assets/solbroking.mp4";
+import video2 from "../assets/solbroking2.mp4";
+import { MdOutlineContentCopy } from "react-icons/md";
+import heart from "../assets/heart.png";
+import battle from "../assets/battle.mp4";
+import chart from "../assets/chart.png";
 
 
 const Home = () => {
@@ -31,7 +37,7 @@ const Home = () => {
         <div className="home">
             <div className="container header">
                 <img src={Logo} alt="Logo" width={70} height={70} />
-                {['Home', 'How to buy', 'Tokenomics', 'About', 'FAQs'].map((item, index) => (
+                {['Home', 'About', 'Tokenomics', 'FAQs'].map((item, index) => (
                     <p
                         key={index}
                         className={`ulli mx-4 ${activeItem === item ? 'active' : ''}`}
@@ -46,76 +52,74 @@ const Home = () => {
                 </div>
             </div>
             <div className="home-main" style={{ color: "#363636" }}>
-                <div className="hm-left">
-                    <span className="header1">Autistic</span>
-                    <span className="header2">Solbro</span>
-                </div>
                 <div className="hm-right">
-                    <img src={Logo} alt="Logo" className="img-main" />
-                    <div className="hmr-socials">
+                    {/* <div className="hmr-socials">
                         <div className="social-btn twitter " style={{ cursor: 'pointer' }}><FaXTwitter color="white" size={25} /></div>
                         <div className="social-btn telegram mx-1" style={{ cursor: 'pointer' }}><FaTelegramPlane color="white" size={25} /></div>
                         <div className="social-btn solana" style={{ cursor: 'pointer' }}><SiSolana color="white" size={25} /></div>
+                    </div> */}
+                    <video autoPlay muted loop playsInline className="img-main" type="video/mp4">
+                        <source src={video2} />
+                        Your browser doesn't support this video
+                    </video>
+                </div>
+                <div className="hm-left">
+                    <span className="header1">Autistic</span>
+                    <span className="header2">Solbro</span>
+                    <div className="code">
+                        <MdOutlineContentCopy width={40} color="#74902d" className="mx-2" />
+                        <p style={{ padding: '0px', margin: '0px' }}>0x532f27101965dd16442E59d40670FaF5eBB142E4</p>
                     </div>
                 </div>
             </div>
             <div className="how-to-buy">
-                <p className="htb-h1">How to buy</p>
                 <div className="htb-wrap">
-                    <div className="htb-card">
-                        <img src={product2} className="htb-img" style={{ borderRadius: "10px" }} />
-                        <div className="htb-middle mt-1">
-                            <h3>Autistic Fastbro</h3>
-                            <p>The memecoin that will have the highest rise in the next 10 years. Invest now.</p>
-                        </div>
-                        <div className="htb-footer">
-                            <div className="">
-                                <p style={{ color: "white", margin: '0' }}>Best offer</p>
-                                <h4 className="htbf-h4">BTC 2.30</h4>
-                            </div>
-                            <div className="launch-web">
-                                <BsArrowUpRight color="white" size={40} />
-
-                            </div>
-                        </div>
+                    <div className="d-flex w100 htb-header">
+                        <p className="htb-h1" style={{ padding: '0', margin: '0' }}>Autistic</p>
+                        <div className="line mx-3"></div>
+                        <p className="htb-h1" style={{ padding: '0', margin: '0' }}>Solbro</p>
                     </div>
-                    <div className="htb-card">
-                        <img src={product1} className="htb-img" style={{ borderRadius: "10px" }} />
-                        <div className="htb-middle mt-1">
-                            <h3>Autistic Solbro</h3>
-                            <p>The memecoin that will have the highest rise in the next 10 years. Invest now.</p>
-                        </div>
-                        <div className="htb-footer">
-                            <div className="">
-                                <p style={{ color: "white", margin: '0' }}>Best offer</p>
-                                <h4 className="htbf-h4">BTC 2.30</h4>
-                            </div>
-                            <div className="launch-web">
-                                <BsArrowUpRight color="white" size={40} />
-
-                            </div>
-                        </div>
-                    </div>
-                    <div className="htb-card">
-                        <img src={product3} className="htb-img" style={{ borderRadius: "10px" }} />
-                        <div className="htb-middle mt-1">
-                            <h3>Autistic Fastbro</h3>
-                            <p>The memecoin that will have the highest rise in the next 10 years. Invest now.</p>
-                        </div>
-                        <div className="htb-footer">
-                            <div className="">
-                                <p style={{ color: "white", margin: '0' }}>Best offer</p>
-                                <h4 className="htbf-h4">BTC 2.30</h4>
-                            </div>
-                            <div className="launch-web">
-                                <BsArrowUpRight color="white" size={40} />
-
-                            </div>
+                    <div className="htb-card mt-5">
+                        <img src={heart} alt="Heart" className="img-heart" />
+                        <div className="htbc-body">
+                            <h2 style={{ fontWeight: '900' }}>Who's SolBro?</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt enim asperiores debitis ipsam ad necessitatibus, est qui corporis vero aspernatur temporibus voluptatibus ea ab esse.</p>
+                            <video type="video/mp4" className="htcb-v" controls loop playsInline muted>
+                                <source src={battle} />
+                            </video>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="second-about">
+            <div className="tokenomics">
+                <div className="token-wrap">
+                    <img src={chart} alt="" width={100} className="chart-img" />
+                    <div className="chart-text">
+                        <h1 className="cht-h1">Tokenomics</h1>
+                        <div className="">
+                            <h2 className="cht-h2">85% LP</h2>
+                            <h2 className="cht-h2">10% TREASURY</h2>
+                            <h2 className="cht-h2">5% CEX WALLET</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="contact">
+                <div className="contact-wrap">
+                    <div className="d-flex w100 htb-header">
+                        <p className="cw-h1" style={{ padding: '0', margin: '0' }}>Contact</p>
+                        <div className="line mx-3"></div>
+                        <p className="cw-h1" style={{ padding: '0', margin: '0' }}>Solbro</p>
+                    </div>
+                    <p className="email" style={{fontFamily:"Nohemi"}}>autistic@solbro.com</p>
+                    <div className="d-flex mt-3">
+                        <FaXTwitter color="#ed8599" size={60} />
+                        <FaTelegramPlane color="#ed8599" size={60} />
+                    </div>
+                    <p style={{fontWeight:'700', marginTop:'5em'}}>Copyright © 2024. All rights reserved.</p>
+                </div>
+            </div>
+            {/* <div className="second-about">
                 <div className="saw">
                     <div className="saw-top">
                         <h1 className="st-h1">What is Autistic SolBro?</h1>
@@ -123,8 +127,8 @@ const Home = () => {
                     </div>
                     <div className="saw-bottom"></div>
                 </div>
-            </div>
-            <div className="about-us">
+            </div> */}
+            {/* <div className="about-us">
                 <div className="container">
                     <div className="au-title">
                         <p>About</p>
@@ -139,8 +143,8 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className="tokenomics">
+            </div> */}
+            {/* <div className="tokenomics">
                 <div className="container t-wrapper">
                     <h1 className="token-h1">Tokenomics</h1>
                     <div className="tokenomics-content mt-5">
@@ -165,8 +169,8 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className="faqs">
+            </div> */}
+            {/* <div className="faqs">
                 <div className="faqs-img">
                     <img src={aut1} alt="Autistic Bro 2" width={270} />
                     <button className="fi-btn mt-1">
@@ -195,7 +199,7 @@ const Home = () => {
                     <p style={{ fontSize: '20px', fontWeight: '600', margin: '0' }}>Contact us:</p>
                     <p style={{ fontSize: '24px', fontWeight: '600', margin: '0' }}>email@gmail.com</p>
                 </div>
-            </div>
+            </div> */}
         </div >
     );
 }
