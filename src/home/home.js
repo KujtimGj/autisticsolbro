@@ -137,9 +137,10 @@ const Home = () => {
                     <div className="chart-text">
                         <h1 className="cht-h1">Tokenomics</h1>
                         <div className="">
-                            <h2 className="cht-h2">85% LP</h2>
-                            <h2 className="cht-h2">10% TREASURY</h2>
-                            <h2 className="cht-h2">5% CEX WALLET</h2>
+                            <h2 className="cht-h2">40% TBD</h2>
+                            <h2 className="cht-h2">30% TBD</h2>
+                            <h2 className="cht-h2">20% TBD</h2>
+                            <h2 className="cht-h2">10% TBD</h2>
                         </div>
                     </div>
                 </div>
@@ -151,7 +152,6 @@ const Home = () => {
                         <div className="line mx-3"></div>
                         <p className="cw-h1" style={{ padding: '0', margin: '0' }}>Solbro</p>
                     </div>
-                    <p className="email" style={{ fontFamily: "Nohemi" }}>autistic@solbro.com</p>
                     <div className="d-flex mt-3">
                         <FaXTwitter
                             color="#ed8599"
