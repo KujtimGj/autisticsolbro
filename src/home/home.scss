@@ -276,138 +276,14 @@
             font-family: 'Crog-Black';
         }
 
-        .htb-header {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-    }
-
-    .second-about {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 6em;
-        height: 50vh;
-        border-radius: 15px;
-
-        .saw {
-            width: 65%;
-            height: 100%;
-            border: 1px solid #0082BC;
-            border-radius: 10px;
-            position: relative;
-
-            .saw-top {
-                padding: 20px;
-                width: 100%;
-                height: 68%;
-                background-color: #222121;
-                border-top-right-radius: 10px;
-                border-top-left-radius: 10px;
-                color: white;
-
-                .st-p {
-                    width: 55%;
-                }
-
-                .st-h1 {
-                    font-size: 50px;
-                    font-family: 'Nohemi';
-                    color: white;
-                }
-            }
-
-            .saw-bottom {
-                width: 100%;
-                height: 32%;
-                background-color: #ed8599;
-                border-bottom-right-radius: 10px;
-                border-bottom-left-radius: 10px;
-            }
-        }
-    }
-
-    .about-us {
-        width: 100%;
-        display: flex;
-        margin-top: 6em;
-
-        .au-title {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            text-align: start;
-            font-family: 'Crog-Bold';
-            font-size: 40px;
-        }
-
-        .au-body {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: start;
-
-            .au-left {
-                width: 50%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-            .au-right {
-                width: 50%;
-                font-size: 20px;
-            }
-        }
-    }
-
-    .faqs {
-        width: 100%;
-        height: 50vh;
-        margin-top: 6em;
-        background-color: #222121;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-
-        .fi-btn {
-            background-color: #ed8599;
-            color: white;
-            font-size: 20px;
-            font-weight: 500;
-            border: none;
-            border-radius: 20px;
-            width: 10em;
-            padding: 5px 0 5px 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .our-links {
-            color: #f3f3f3;
-        }
-
-        .ol-p {
-            margin: 0;
-        }
-
-        .ol-s {
-            margin: 0;
-            cursor: pointer;
-        }
     }
 }
 
 @media screen and (max-width:768px) {
     .home {
         .header {
-            width: 100%;
             display: flex;
+            width: 100%;
             justify-content: space-between;
             align-items: center;
             margin-top: 0.5em;
@@ -554,8 +430,16 @@
 
                 .code {
                     display: flex;
-                    width: 60%;
+                    width: 90%;
                     border: 1px solid #74902d;
+                    border-radius: 10px;
+                    padding: 10px;
+                    justify-content: center;
+                    align-items: center;
+
+                    .code-p {
+                        font-size: 12px;
+                    }
                 }
             }
         }
@@ -581,18 +465,27 @@
                 justify-content: space-around;
                 align-items: center;
                 flex-direction: column;
-
+                .htb-header{
+                    display: none;
+                }
                 .htb-card {
-                    height: 30em;
                     width: 100%;
-                    background-color: #222121;
                     border-radius: 15px;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+                    justify-content: center;
                     padding: 10px; // Adding padding here
                     box-sizing: border-box; // Ensures padding is included in width and height
                     margin-top: 1em;
+
+                    .htbc-body {
+                        width: 100%;
+
+                        .htcb-v {
+                            width: -webkit-fill-available;
+                        }
+                    }
 
                     .htb-img {
                         height: 50%; // Adjust height to fill the card
@@ -637,140 +530,84 @@
                 }
             }
         }
-
-        .second-about {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 6em;
-            height: 40vh;
-            background-image: url("../assets/about-us.png");
-            background-repeat: no-repeat;
-            background-size: cover;
-            object-fit: cover;
-            border-radius: 15px;
-        }
-
-        .about-us {
-            width: 100%;
-            display: flex;
-            margin-top: 6em;
-            height: auto;
-
-            .au-title {
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                text-align: start;
-                font-family: 'Crog-Bold';
-                font-size: 30px;
-            }
-
-            .au-body {
-                width: 90%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-
-                .au-left {
-                    width: 40%;
-                }
-
-                .au-right {
-                    width: 100%;
-                    font-size: 18px;
-                }
-            }
-        }
-
         .tokenomics {
             width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 5em;
-            height: auto;
-
-            .t-wrapper {
-                .token-h1 {
-                    font-size: 40px;
-                    font-family: 'Nohemi';
+            height: 40em;
+            background: rgba(255, 255, 255, 0.1);
+            .token-wrap {
+                width: 90%;
+                border: 1px solid #05a3c9;
+                border-radius: 15px;
+                padding: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-direction: column;
+    
+                .chart-img {
+                    width: 10em;
                 }
-
-                .tokenomics-content {
+    
+                .chart-text {
                     display: flex;
-                    justify-content: space-between;
+                    justify-content: center;
                     align-items: center;
                     flex-direction: column;
-                    width: 100%;
-
-                    .card-1 {
-                        border: 3px solid #74902d;
-                        width: 90%;
-                        border-radius: 15px;
-                        padding: 30px;
-                        display: flex;
-                        height: 20em;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                    }
-
-                    .card-2 {
+                    height: 100%;
+    
+                    .cht-h1 {
+                        color: #363636;
+                        -webkit-text-stroke: 2px #74902d;
+                        font-size: 4em;
                         margin-top: 1em;
-                        margin-bottom: 1em;
-                        padding: 40px;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        width: 100%;
-                        border: 3px solid #ed8599;
-                        border-radius: 15px;
+                    }
+    
+                    .cht-h2 {
+                        font-family: 'Nohemi';
+                        font-size: 30px;
                     }
                 }
             }
         }
-
-        .faqs {
+        .contact {
             width: 100%;
-            height: auto;
-            margin-top: 6em;
-            background-color: #222121;
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
-            flex-direction: column;
-
-            .fi-btn {
-                background-color: #ed8599;
-                color: white;
-                font-size: 20px;
-                font-weight: 500;
-                border: none;
-                border-radius: 20px;
-                width: 10em;
-                padding: 5px 0 5px 0;
+    
+            .contact-wrap {
+                width: 70%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+    
+                flex-direction: column;
+    
+                .email {
+                    color: #74902d;
+                    // -webkit-text-stroke: 2px #ed8599;
+                    font-size: 2em;
+                }
             }
-
-            .our-links {
-                color: #f3f3f3;
+    
+            .line {
+                width: -webkit-fill-available;
+                height: 2px;
+                background-color: #74902d;
             }
-
-            .ol-p {
-                margin: 0;
+    
+            .cw-h1 {
+                margin-bottom: 1em;
+                font-size: 30px;
+                font-family: 'Crog-Black';
             }
-
-            .ol-s {
-                margin: 0;
-                cursor: pointer;
-            }
+    
         }
     }
 }

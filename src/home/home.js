@@ -68,13 +68,13 @@ const Home = () => {
                     <span className="header2">Solbro</span>
                     <div className="code">
                         <MdOutlineContentCopy width={40} color="#74902d" className="mx-2" />
-                        <p style={{ padding: '0px', margin: '0px' }}>0x532f27101965dd16442E59d40670FaF5eBB142E4</p>
+                        <p className="code-p" style={{ padding: '0px', margin: '0px' }}>0x532f27101965dd16442E59d40670FaF5eBB142E4</p>
                     </div>
                 </div>
             </div>
             <div className="how-to-buy">
                 <div className="htb-wrap">
-                    <div className="d-flex w100 htb-header">
+                    <div className="htb-header">
                         <p className="htb-h1" style={{ padding: '0', margin: '0' }}>Autistic</p>
                         <div className="line mx-3"></div>
                         <p className="htb-h1" style={{ padding: '0', margin: '0' }}>Solbro</p>
@@ -116,7 +116,7 @@ const Home = () => {
                         <FaXTwitter color="#ed8599" size={60} />
                         <FaTelegramPlane color="#ed8599" size={60} />
                     </div>
-                    <p style={{fontWeight:'700', marginTop:'5em'}}>Copyright © 2024. All rights reserved.</p>
+                    <p style={{fontWeight:'700', marginTop:'5em', textAlign:'center'}}>Copyright © 2024. All rights reserved.</p>
                 </div>
             </div>
             {/* <div className="second-about">
