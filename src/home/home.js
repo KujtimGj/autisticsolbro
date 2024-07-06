@@ -11,7 +11,7 @@ import battle from "../assets/battle.mp4";
 import chart from "../assets/chart.png";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-
+import dexscreen from "../assets/dexter_icon.png"
 
 const Home = () => {
 
@@ -78,13 +78,13 @@ const Home = () => {
                 >
                     <span style={{ color: "#ed8599" }} className="mx-1"> • </span> About
                 </p>
-                <p
+                {/* <p
                     className={`ulli mx-4 ${activeItem === 'Tokenomics' ? 'active' : ''}`}
                     style={{ fontSize: '19px', cursor: 'pointer' }}
                     onClick={() => handleItemClick('Tokenomics')}
                 >
                     <span style={{ color: "#ed8599" }} className="mx-1"> • </span> Tokenomics
-                </p>
+                </p> */}
                 <p
                     className={`ulli mx-4 ${activeItem === 'Contact' ? 'active' : ''}`}
                     style={{ fontSize: '19px', cursor: 'pointer' }}
@@ -108,7 +108,7 @@ const Home = () => {
                     <span className="header2">Solbro</span>
                     <div className="code" style={{cursor:'pointer'}}>
                         <MdOutlineContentCopy width={40} color="#74902d" className="mx-2" />
-                        <p className="code-p" onClick={copyToClipboard} style={{ padding: '0px', margin: '0px' }}>0xfsaf125ui5411904489309dasiiewq0670FaF5eBB142E4</p>
+                        <p className="code-p" onClick={copyToClipboard} style={{ padding: '0px', margin: '0px' }}>TBA</p>
                     </div>
                 </div>
             </div>
@@ -131,7 +131,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className="tokenomics" ref={tokenomicsRef}>
+            {/* <div className="tokenomics" ref={tokenomicsRef}>
                 <div className="token-wrap">
                     <img src={chart} alt="" width={100} className="chart-img" />
                     <div className="chart-text">
@@ -144,7 +144,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <div className="contact" ref={contactRef}>
                 <div className="contact-wrap">
                     <div className="d-flex w100 htb-header">
@@ -160,7 +160,8 @@ const Home = () => {
                             onClick={handleTwitterClick}
                             style={{ cursor: 'pointer' }}
                         />
-                        <FaTelegramPlane onClick={handleTelegramClick} color="#ed8599" size={60} style={{ cursor: 'pointer' }} />
+                        <FaTelegramPlane onClick={handleTelegramClick} color="#ed8599" size={60}className="mx-4" style={{ cursor: 'pointer' }} />
+                        <img src={dexscreen} alt="DEX Screen" width={60} style={{cursor:'pointer'}}  />
                     </div>
                     <p style={{ fontWeight: '700', marginTop: '5em', textAlign: 'center' }} >Copyright © 2024. All rights reserved.</p>
                 </div>

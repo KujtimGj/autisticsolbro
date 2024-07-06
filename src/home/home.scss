@@ -460,7 +460,7 @@
             }
 
             .htb-wrap {
-                width: 90%;
+                width: 95%;
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
@@ -478,12 +478,16 @@
                     padding: 10px; // Adding padding here
                     box-sizing: border-box; // Ensures padding is included in width and height
                     margin-top: 1em;
-
+                    .img-heart {
+                     display: none;
+                    }
                     .htbc-body {
                         width: 100%;
 
                         .htcb-v {
-                            width: -webkit-fill-available;
+                            width:-webkit-fill-available;
+                            height: 60vh;
+                            object-fit:fill ;
                         }
                     }
 
