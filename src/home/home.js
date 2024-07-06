@@ -16,7 +16,7 @@ import dexscreen from "../assets/dexter_icon.png"
 const Home = () => {
 
     const handleBuyNow = () => {
-        window.location.href = ""
+        window.open("https://raydium.io/swap/?inputMint=sol&outputMint=4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R", "_blank");
     }
 
 
@@ -93,7 +93,7 @@ const Home = () => {
                     <span style={{ color: "#ed8599" }} className="mx-1"> • </span> Contact
                 </p>
                 <div className="cta-btn">
-                    <div className="buy-btn mx-2" onClick={handleBuyNow}>Buy</div>
+                    <div className="buy-btn mx-2" onClick={handleBuyNow} style={{ cursor: 'pointer' }}>Buy</div>
                 </div>
             </div>
             <div ref={homeRef} className="home-main" style={{ color: "#363636" }}>
@@ -106,7 +106,7 @@ const Home = () => {
                 <div className="hm-left">
                     <span className="header1">Autistic</span>
                     <span className="header2">Solbro</span>
-                    <div className="code" style={{cursor:'pointer'}}>
+                    <div className="code" style={{ cursor: 'pointer' }}>
                         <MdOutlineContentCopy width={40} color="#74902d" className="mx-2" />
                         <p className="code-p" onClick={copyToClipboard} style={{ padding: '0px', margin: '0px' }}>TBA</p>
                     </div>
@@ -123,7 +123,7 @@ const Home = () => {
                         <img src={Logo} alt="Heart" className="img-heart" />
                         <div className="htbc-body">
                             <h2 style={{ fontWeight: '900' }}>Who's SolBro?</h2>
-                            <p>SolBro Coin is a unique cryptocurrency inspired by a beloved, slow-paced character known for its serene and laid-back nature. The coin aims to promote inclusivity and raise awareness about autism through its engaging and supportive community, connecting childhood friends and embracing the degen culture.</p>
+                            <p>Autistic SolBro Coin is the name given to a really unique cryptocurrency inspired by everyone's favorite slow-moving character who is known to be serene and laid-back. The coin attempts to include and spread awareness about autism through its community: fun and supportive, uniting childhood friends, and embracing degen culture.                            </p>
                             <video type="video/mp4" className="htcb-v" autoPlay loop playsInline muted>
                                 <source src={battle} />
                             </video>
@@ -160,8 +160,8 @@ const Home = () => {
                             onClick={handleTwitterClick}
                             style={{ cursor: 'pointer' }}
                         />
-                        <FaTelegramPlane onClick={handleTelegramClick} color="#ed8599" size={60}className="mx-4" style={{ cursor: 'pointer' }} />
-                        <img src={dexscreen} alt="DEX Screen" width={60} style={{cursor:'pointer'}}  />
+                        <FaTelegramPlane onClick={handleTelegramClick} color="#ed8599" size={60} className="mx-4" style={{ cursor: 'pointer' }} />
+                        <img src={dexscreen} alt="DEX Screen" width={60} style={{ cursor: 'pointer' }} />
                     </div>
                     <p style={{ fontWeight: '700', marginTop: '5em', textAlign: 'center' }} >Copyright © 2024. All rights reserved.</p>
                 </div>
